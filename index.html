@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/styles/style-index.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link href="./assets/icons/fontawesome-free-5.15.3-web/css/all.css" rel="stylesheet">
+  <title>Milan Haria</title>
+</head>
+<body>
+  <header></header>
+
+  <nav>
+    <div class="nav-container">
+      <a href="#"><h1>MILAN HARIA</h1></a>
+      <div class="nav-links-container">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">My Projects</a>
+      </div>
+    </div>
+  </nav>
+  
+  <div class="title">
+    <h4>Hi, my name is</h4>
+    <h1>Milan Haria</h1>
+    <h4 style="margin-bottom: 50px;">I am an aspiring software developer based in the UK. <br> Check out my work below.</h4>
+    <a class="my-work-link" href="#myWork">My Work</a>
+  </div>
+
+  <div id='myWork' class="content">
+    <div class="my-work-container">
+      <h1>My Work</h1>
+      <div class="circle">
+        <div class="shape1"></div>
+        <div class="shape2"></div>
+        <div class="shape3"></div>
+      </div>
+      <div class="work-tile-container">
+        <div class="work-tile">
+          <div class="left-arrow-container">
+            <i id="prev-arrow" class="fas fa-arrow-left" style="color: #4285f4"></i>
+          </div>
+
+          <div class="work-card" id="work-card-container">
+          </div>
+          
+          <div class="right-arrow-container">
+            <i id="next-arrow" class="fas fa-arrow-right" style="color: #4285f4"></i>
+          </div>
+
+        </div>
+      </div>
+      <div class="progress-bubbles-container">
+        <div class="progress-bubble selected"></div>
+        <div class="progress-bubble"></div>
+        <div class="progress-bubble"></div>
+      </div>    
+    </div>
+    
+  </div>
+</body>
+<script src="./assets/js/cards.js"/></script>
+</html>

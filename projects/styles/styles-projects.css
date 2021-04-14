@@ -1,0 +1,188 @@
+* {
+  margin: none;
+  padding: none;
+  box-sizing: border-box;
+  color: black;
+  font-family: 'Poppins', sans-serif;
+}
+
+.appear {
+  opacity: 1 !important;
+  transform: translateY(0px) !important;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+nav {
+  position: fixed;
+  color: white;
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin: auto;
+  background: rgb(40, 40, 40);
+  backdrop-filter: blur(1rem);
+  z-index: 100;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  color: white;
+}
+
+.nav-container h1 {
+  color: white;
+  font-size: 1rem;
+  margin-left: 50px;
+}
+
+.nav-links-container {
+  margin-right: 50px;
+}
+
+.nav-links-container a {
+  text-decoration: none;
+  margin-left: 50px;
+  color: white;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
+  width: 90%;
+  margin: 100px auto;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: 1s ease-in-out;
+}
+
+/* PROJECTS CONTAINER */
+
+.projects-container {
+  text-align: left;
+  margin-top: 20px;
+  margin-right: 50px;
+}
+
+.project-title {
+  display: flex;
+  align-items: center;
+}
+
+#down-arrow {
+  transform: rotateZ(-90deg);
+  transition: 0.75s;
+}
+
+.arrow-active {
+  transform: rotateZ(0deg) !important;
+}
+
+.project-title h2 {
+  margin-right: 10px;
+}
+
+.project-link {
+  padding: 0;
+  margin-top: 10px;
+  cursor: pointer;
+  transform: translateY(20pxs);
+  transition: 0.5s;
+  opacity: 0;
+}
+
+.project-link a {
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.project-link a:hover {
+  color: #f4b400;
+}
+
+/* SUMMARY CONTAINER */
+
+.summary-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.summary {
+  text-align: left;
+}
+
+.summary a {
+  color: #f4b400;
+}
+
+.skills {
+  text-align: left;
+  margin-right: 200px;
+  margin-top: 80px;
+}
+
+.summary h3,
+.skills h3,
+.images-container h3 {
+  color: rgb(110, 110, 110);
+  font-size: 1.25rem;
+  text-align: left;
+}
+
+/* SKILL STYLES */
+
+.skill-buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.skill-buttons p {
+  padding: 0px;
+  border-radius: 15px;
+  margin-right: 50%;
+  text-align: left;
+}
+
+/* IMAGE CONTAINER */
+
+.images-container {
+  margin-top: 80px;
+}
+
+.image {
+  margin-top: 50px;
+}
+
+.image img {
+  max-height: 500px;
+  width: auto;
+}
+
+.image-header {
+  text-align: left !important;
+  font-size: 1.2rem;
+  padding: 0;
+  margin: 0px 0 5px 0;
+  opacity: 0;
+  transition: opacity 0.8s;
+}
+
+.project-image {
+  width: 100%;
+  border-radius: 5px;
+  -webkit-filter: drop-shadow(5px 5px 5px #222);
+  filter: drop-shadow(5px 5px 5px #222);
+}
+
+.image:hover .image-header {
+  opacity: 1;
+}
+
+.view-projects {
+  margin-top: 100px;
+}
